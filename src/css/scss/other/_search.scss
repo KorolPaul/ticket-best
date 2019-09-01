@@ -1,0 +1,24 @@
+.search {
+    width: 100px;
+
+    &_field[type] {
+        width: 100%;
+        margin: 0;
+        background: $light_color url('#{$img}/loop.svg') no-repeat 12px center;
+        background-size: 17px 17px;
+        font-size: 15px;
+        font-weight: 500;
+        padding: 11px 15px 11px 43px;
+        opacity: 0.7;
+        border-radius: 4px;
+
+        &:hover,
+        &:focus {
+            opacity: 1;
+        }
+    }
+
+    &:hover + .menu {
+        opacity: .7;
+    } 
+}

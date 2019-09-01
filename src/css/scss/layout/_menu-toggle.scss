@@ -1,0 +1,41 @@
+.menu-toggle {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-size: 0px;
+    color: transparent;
+    position: absolute;
+    padding: 0;
+    top: 20px;
+    left: 15px;
+    height: 18px;
+    width: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 3;
+    @include tablet {
+        display: none;
+    }
+
+    &:hover,
+    &:active {
+        background: transparent;
+    }
+
+    &_line {
+        background: $light_color;
+        height: 2px;
+        width: 100%;
+        transition: .2s ease transform;
+
+        &:nth-child(2) {
+            width: 70%;
+        }
+
+        .menu-toggle:hover &,
+        .menu-toggle.opened & {
+            transform: scaleX(1);
+        }
+    }
+}

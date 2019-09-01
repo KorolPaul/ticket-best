@@ -1,0 +1,56 @@
+.menu {
+    position: relative;
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 55px 20px;
+    background: $light_color;
+    transition: .2s ease-in-out opacity;
+    @include tablet {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: static;
+        padding: 0;
+        background: transparent;
+    }
+    @include desktop {
+        justify-content: flex-end;
+    }
+
+    .menu-opened & {
+        display: block;
+    }
+
+    &_link {
+        line-height: 1.25;
+        display: block;
+        font: 300 19px $font-family;
+        margin: 0 0 30px;
+        color: $light_color;
+        @include tablet {
+            font-size: 16px;
+            margin: 0 15px;
+        }
+
+        &:hover {
+            color: $bright_color;
+        }
+    }
+
+    .button {
+        position: absolute;
+        bottom: 40px;
+        left: 20px;
+        right: 20px;
+        margin: 0;
+        width: calc(100% - 40px);
+        @include tablet {
+            position: static;
+            width: auto;
+        }
+    }
+}

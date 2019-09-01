@@ -1,0 +1,23 @@
+.header {
+    background: $dark_color;
+    position: relative;
+    z-index: 2;
+    
+    &_holder {
+        @include layout;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 16px 10px 56px;
+        @include tablet {
+            padding: 15px 0;
+        }
+    }
+    &_controls {
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}

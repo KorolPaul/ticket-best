@@ -1,0 +1,53 @@
+.footer {
+    background: $color;
+    color: $light_color;
+    padding: 212px 20px 10px;
+    font-size: 16px;
+    margin: -160px 0 0;
+    line-height: 1.43;
+    @include tablet {
+        margin: -290px 0 0;
+        padding-bottom: 60px;
+    }
+
+    &_container {
+        @include tablet {
+            @include layout;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+    }
+    &_description {
+        font-size: 14px;
+        opacity: .7;
+    }
+    &_logo {
+        width: 180px;
+        display: block;
+        margin: 0 0 14px;
+    }
+    &_column {
+        margin: 0 0 40px;
+        @include tablet {
+            width: 290px;
+            margin: 0 40px 0 0;
+        }
+    }
+    &_title {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.38;
+        opacity: 1;
+        margin: 0 0 10px;
+        @include tablet {
+            font-size: 18px;
+            margin-bottom: 17px;
+        }
+    }
+
+    p:not([class]) {
+        opacity: .7;
+        margin: 0 0 10px;
+    }
+}

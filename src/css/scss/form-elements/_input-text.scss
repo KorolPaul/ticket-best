@@ -1,0 +1,39 @@
+input[type="text"],
+input[type="password"],
+input[type="search"],
+input[type="email"],
+input[type="url"],
+input[type="tel"] {
+    @include placeholder-color(#100f10);
+    color: $color;
+    border: none;
+    box-sizing: border-box;
+    font: 500 16px $font-family;
+    padding: 14px 17px;
+    width: 100%;
+    margin: 0 0 10px;
+    opacity: 0.4;
+    border-radius: 6px;
+    background-color: #ffffff;
+    transition: .2s ease-in opacity, .2s ease-in color;
+    @include tablet {
+        font-size: 17px;
+        padding: 17px 20px;
+    }
+
+    &:focus {
+        opacity: 1;
+    }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+    border: none;
+    border-bottom: 1px solid rgba($color, .12);
+    -webkit-text-fill-color:  #4e565c;
+    transition: background-color 5000s ease-in-out 0s;
+}

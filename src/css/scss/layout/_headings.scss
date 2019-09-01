@@ -1,0 +1,48 @@
+%heading-1 {
+    font: bold #{36px}/1 $font-family;
+    line-height: 1;
+    letter-spacing: -0.11px;
+    margin: 0 0 2px;
+    @include tablet {
+        font-size: 76px;
+        letter-spacing: -0.24px;
+        margin: 0 0 13px;
+    }
+}
+%heading-2 {
+    font: 500 #{30px}/1.07 $font-family;
+    margin: 38px 0 17px;
+    @include tablet {
+        font-size: 54px;
+
+    }
+}
+%heading-3 {
+    font: 600 #{34px}/1 $font-family;
+}
+
+h1,
+.heading-1 {
+    @extend %heading-1;
+}
+h2,
+.heading-2 {
+    @extend %heading-2;
+    text-align: center;
+}
+h3,
+.heading-3 {
+    @extend %heading-3;
+}
+
+.subtitle {
+    font-size: 17px;
+    line-height: 1.47;
+    margin: 0 0 24px;
+    text-align: center;
+    @include tablet {
+        font-size: 25px;
+        line-height: 1.2;
+        margin: 0 0 40px;
+    }
+}

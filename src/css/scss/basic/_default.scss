@@ -1,0 +1,73 @@
+body {
+    background: $bg_color;
+    color: $color;
+    font: #{$font-size__small} $font-family;
+    padding: 0;
+    @include tablet {
+        font-size: $font-size;
+    }
+}
+
+a {
+    color: $color;
+    text-decoration: none;
+    transition: .2s ease-in-out color;
+
+    &:hover,
+    &.hover {
+        outline: none;
+    }
+    &:active,
+    &.active {
+        outline: none;
+    }
+}
+
+p {
+    margin: 0 0 20px;
+}
+
+ul,
+ol {
+    padding: 0 0 0 20px;
+}
+
+ul li {
+    font-size: 16px;
+    line-height: 1.38;
+    margin: 0 0 16px;
+    @include tablet {
+        font-size: 21px;
+        line-height: 1.19;
+    }
+
+    &::marker {
+        color: $yellow_color;
+        font-size: 24px;
+        vertical-align: -2px;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+button,
+input,
+textarea {
+    &:focus {
+        outline: none;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.menu-opened {
+    overflow: hidden;
+    @include tablet {
+        overflow: auto;
+    }
+}
