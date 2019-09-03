@@ -2,5 +2,6 @@
     display: none;
     @include tablet {
         display: block;
+        margin: 0 0 0 20px;
     }
 }

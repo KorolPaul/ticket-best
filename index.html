@@ -25,7 +25,7 @@
     <header class="header">
         <div class="header_holder">
             <a class="logo" href="#main">
-                <img src="https://via.placeholder.com/146x40" alt="" class="logo_icon">
+                <img src="/src/img/logo.png" alt="" class="logo_icon">
             </a>
             <div class="search">
                 <input type="search" class="search_field" placeholder="Поиск">
@@ -50,12 +50,28 @@
     </header>
 
     <div class="content">
-        <div class="slider">
+        <div class="slider owl-carousel">
             <div class="slider_item">
                 <img class="slider_image" src="src/img/slider-1.jpg" alt="">
                 <div class="slider_info">
                     <p class="slider_date">cб 13 августа</p>
-                    <p class="slider_title">Симфонические рок-хиты</p>
+                    <h1 class="slider_title">Симфонические рок-хиты</h1>
+                    <p class="slider_adress">Планета КВН</p>
+                </div>
+            </div>
+            <div class="slider_item">
+                <img class="slider_image" src="src/img/slider-1.jpg" alt="">
+                <div class="slider_info">
+                    <p class="slider_date">cб 13 августа</p>
+                    <h1 class="slider_title">Симфонические рок-хиты</h1>
+                    <p class="slider_adress">Планета КВН</p>
+                </div>
+            </div>
+            <div class="slider_item">
+                <img class="slider_image" src="src/img/slider-1.jpg" alt="">
+                <div class="slider_info">
+                    <p class="slider_date">cб 13 августа</p>
+                    <h1 class="slider_title">Симфонические рок-хиты</h1>
                     <p class="slider_adress">Планета КВН</p>
                 </div>
             </div>
@@ -64,24 +80,308 @@
             <div class="categories">
                 <div class="category">
                     <img src="https://via.placeholder.com/587x145" alt="" class="category_image">
-                    <p class="category_title">Рок фетивали августа</p>
-                    <span class="category_count">13 событий</span>
+                    <div class="category_text">
+                        <h1 class="category_title">Рок фетивали августа</h1>
+                        <span class="category_count">13 событий</span>
+                    </div>
                 </div>
                 <div class="category">
                     <img src="https://via.placeholder.com/587x145" alt="" class="category_image">
-                    <p class="category_title">Спектакли для детей на выходные</p>
-                    <span class="category_count">13 событий</span>
+                    <div class="category_text">        
+                        <p class="category_title">Спектакли для детей на выходные</p>
+                        <span class="category_count">13 событий</span>
+                    </div>
                 </div>
                 <div class="category">
                     <img src="https://via.placeholder.com/587x145" alt="" class="category_image">
-                    <p class="category_title">Идеальные концерты для свидания</p>
-                    <span class="category_count">13 событий</span>
+                    <div class="category_text">
+                        <p class="category_title">Идеальные концерты для свидания</p>
+                        <span class="category_count">13 событий</span>
+                    </div>
                 </div>
                 <div class="category">
                     <img src="https://via.placeholder.com/587x145" alt="" class="category_image">
-                    <p class="category_title">Скоро новый год!</p>
-                    <span class="category_count">13 событий</span>
+                    <div class="category_text">
+                        <p class="category_title">Скоро новый год!</p>
+                        <span class="category_count">13 событий</span>
+                    </div>
                 </div>
+            </div>
+
+            <h2>Топ 3</h2>
+            <div class="cards cards__3">
+                <div class="card card__small">
+                    <img src="https://via.placeholder.com/383x255" alt="" class="card_image">
+                    <div class="card_info">
+                        <a href="#" class="card_title">Большой футбольный день в Нарве</a>
+                        <p class="card_date">вт • 9 Сентября</p>
+                        <p class="card_adress">Москва, Московский театр оперетты</p>
+                        <button class="card_price-button"> От 500 ₽</button>
+                    </div>
+                </div>
+                <div class="card card__small">
+                    <img src="https://via.placeholder.com/383x255" alt="" class="card_image">
+                    <div class="card_info">
+                        <a href="#" class="card_title">Сказка о королевских подснежниках</a>
+                        <p class="card_date">вт • 9 Сентября</p>
+                        <p class="card_adress">Москва, Московский театр оперетты</p>
+                        <button class="card_price-button"> От 500 ₽</button>
+                    </div>
+                </div>
+                <div class="card card__small">
+                    <img src="https://via.placeholder.com/383x255" alt="" class="card_image">
+                    <div class="card_info">
+                        <a href="#" class="card_title">Женихи</a>
+                        <p class="card_date">вт • 9 Сентября</p>
+                        <p class="card_adress">Москва, Московский театр оперетты</p>
+                        <button class="card_price-button"> От 500 ₽</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter">
+                <div class="filter_column">
+                    <div class="filter_buttons">
+                        <button class="filter_button active">Сегодня</button>
+                        <button class="filter_button">Завтра</button>
+                        <button class="filter_button">На выходные</button>
+                    </div>
+                    <div class="filter_select">
+                        <select name="" id="" placeholder="">
+                            <option>Дата</option>
+                            <option>01.09.2019</option>
+                            <option>02.09.2019</option>
+                            <option>03.09.2019</option>
+                            <option>04.09.2019</option>
+                        </select>
+                    </div>
+                    <div class="filter_select">
+                        <select name="" id="" placeholder="Жанр">
+                            <option>Жанр</option>
+                            <option>01.09.2019</option>
+                            <option>02.09.2019</option>
+                            <option>03.09.2019</option>
+                            <option>04.09.2019</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="filter_column">
+                    <div class="filter_buttons">
+                        <button class="filter_button">Театр</button>
+                        <button class="filter_button">Балет</button>
+                        <button class="filter_button">Концерт</button>
+                        <button class="filter_button">Фестиваль</button>
+                        <button class="filter_button">Для детей</button>
+                        <a href="" class="filter_all">...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="card_tags">
+                        <a href="#" class="card_tag">спектакль</a>
+                        <a href="#" class="card_tag">шоу</a>
+                    </div>
+                    <img src="https://via.placeholder.com/280x420" alt="" class="card_image">
+                    <div class="card_info">
+                        <p class="card_date">
+                            <span>пт • 26 Февраля</span>
+                            <span>19:00</span>
+                        </p>
+                        <a href="#" class="card_title">Алиса в стране чудес</a>
+                        <p class="card_adress">Москва, Планета КВН</p>
+                        <p class="card_price">от 500 ₽</p>
+                        <button class="card_button">Купить билет</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_tags">
+                        <a href="#" class="card_tag">спектакль</a>
+                        <a href="#" class="card_tag">шоу</a>
+                    </div>
+                    <img src="https://via.placeholder.com/280x420" alt="" class="card_image">
+                    <div class="card_info">
+                        <p class="card_date">
+                            <span>пт • 26 Февраля</span>
+                            <span>19:00</span>
+                        </p>
+                        <a href="#" class="card_title">Лебединое озеро. Балет</a>
+                        <p class="card_adress">Москва, Планета КВН</p>
+                        <p class="card_price">от 500 ₽</p>
+                        <button class="card_button">Купить билет</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_tags">
+                        <a href="#" class="card_tag">спектакль</a>
+                        <a href="#" class="card_tag">шоу</a>
+                    </div>
+                    <img src="https://via.placeholder.com/280x420" alt="" class="card_image">
+                    <div class="card_info">
+                        <p class="card_date">
+                            <span>пт • 26 Февраля</span>
+                            <span>19:00</span>
+                        </p>
+                        <a href="#" class="card_title">Женихи</a>
+                        <p class="card_adress">Москва, Планета КВН</p>
+                        <p class="card_price">от 500 ₽</p>
+                        <button class="card_button">Купить билет</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_tags">
+                        <a href="#" class="card_tag">спектакль</a>
+                        <a href="#" class="card_tag">шоу</a>
+                    </div>
+                    <img src="https://via.placeholder.com/280x420" alt="" class="card_image">
+                    <div class="card_info">
+                        <p class="card_date">
+                            <span>пт • 26 Февраля</span>
+                            <span>19:00</span>
+                        </p>
+                        <a href="#" class="card_title">Гори, гори моя звезда... Анна Герман</a>
+                        <p class="card_adress">Москва, Планета КВН</p>
+                        <p class="card_price">от 500 ₽</p>
+                        <button class="card_button">Купить билет</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_tags">
+                        <a href="#" class="card_tag">спектакль</a>
+                        <a href="#" class="card_tag">шоу</a>
+                    </div>
+                    <img src="https://via.placeholder.com/280x420" alt="" class="card_image">
+                    <div class="card_info">
+                        <p class="card_date">
+                            <span>пт • 26 Февраля</span>
+                            <span>19:00</span>
+                        </p>
+                        <a href="#" class="card_title">Алиса в стране чудес</a>
+                        <p class="card_adress">Москва, Планета КВН</p>
+                        <p class="card_price">от 500 ₽</p>
+                        <button class="card_button">Купить билет</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_tags">
+                        <a href="#" class="card_tag">спектакль</a>
+                        <a href="#" class="card_tag">шоу</a>
+                    </div>
+                    <img src="https://via.placeholder.com/280x420" alt="" class="card_image">
+                    <div class="card_info">
+                        <p class="card_date">
+                            <span>пт • 26 Февраля</span>
+                            <span>19:00</span>
+                        </p>
+                        <a href="#" class="card_title">Лебединое озеро. Балет</a>
+                        <p class="card_adress">Москва, Планета КВН</p>
+                        <p class="card_price">от 500 ₽</p>
+                        <button class="card_button">Купить билет</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_tags">
+                        <a href="#" class="card_tag">спектакль</a>
+                        <a href="#" class="card_tag">шоу</a>
+                    </div>
+                    <img src="https://via.placeholder.com/280x420" alt="" class="card_image">
+                    <div class="card_info">
+                        <p class="card_date">
+                            <span>пт • 26 Февраля</span>
+                            <span>19:00</span>
+                        </p>
+                        <a href="#" class="card_title">Женихи</a>
+                        <p class="card_adress">Москва, Планета КВН</p>
+                        <p class="card_price">от 500 ₽</p>
+                        <button class="card_button">Купить билет</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_tags">
+                        <a href="#" class="card_tag">спектакль</a>
+                        <a href="#" class="card_tag">шоу</a>
+                    </div>
+                    <img src="https://via.placeholder.com/280x420" alt="" class="card_image">
+                    <div class="card_info">
+                        <p class="card_date">
+                            <span>пт • 26 Февраля</span>
+                            <span>19:00</span>
+                        </p>
+                        <a href="#" class="card_title">Гори, гори моя звезда... Анна Герман</a>
+                        <p class="card_adress">Москва, Планета КВН</p>
+                        <p class="card_price">от 500 ₽</p>
+                        <button class="card_button">Купить билет</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_tags">
+                        <a href="#" class="card_tag">спектакль</a>
+                        <a href="#" class="card_tag">шоу</a>
+                    </div>
+                    <img src="https://via.placeholder.com/280x420" alt="" class="card_image">
+                    <div class="card_info">
+                        <p class="card_date">
+                            <span>пт • 26 Февраля</span>
+                            <span>19:00</span>
+                        </p>
+                        <a href="#" class="card_title">Алиса в стране чудес</a>
+                        <p class="card_adress">Москва, Планета КВН</p>
+                        <p class="card_price">от 500 ₽</p>
+                        <button class="card_button">Купить билет</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_tags">
+                        <a href="#" class="card_tag">спектакль</a>
+                        <a href="#" class="card_tag">шоу</a>
+                    </div>
+                    <img src="https://via.placeholder.com/280x420" alt="" class="card_image">
+                    <div class="card_info">
+                        <p class="card_date">
+                            <span>пт • 26 Февраля</span>
+                            <span>19:00</span>
+                        </p>
+                        <a href="#" class="card_title">Лебединое озеро. Балет</a>
+                        <p class="card_adress">Москва, Планета КВН</p>
+                        <p class="card_price">от 500 ₽</p>
+                        <button class="card_button">Купить билет</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_tags">
+                        <a href="#" class="card_tag">спектакль</a>
+                        <a href="#" class="card_tag">шоу</a>
+                    </div>
+                    <img src="https://via.placeholder.com/280x420" alt="" class="card_image">
+                    <div class="card_info">
+                        <p class="card_date">
+                            <span>пт • 26 Февраля</span>
+                            <span>19:00</span>
+                        </p>
+                        <a href="#" class="card_title">Женихи</a>
+                        <p class="card_adress">Москва, Планета КВН</p>
+                        <p class="card_price">от 500 ₽</p>
+                        <button class="card_button">Купить билет</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_tags">
+                        <a href="#" class="card_tag">спектакль</a>
+                        <a href="#" class="card_tag">шоу</a>
+                    </div>
+                    <img src="https://via.placeholder.com/280x420" alt="" class="card_image">
+                    <div class="card_info">
+                        <p class="card_date">
+                            <span>пт • 26 Февраля</span>
+                            <span>19:00</span>
+                        </p>
+                        <a href="#" class="card_title">Гори, гори моя звезда... Анна Герман</a>
+                        <p class="card_adress">Москва, Планета КВН</p>
+                        <p class="card_price">от 500 ₽</p>
+                        <button class="card_button">Купить билет</button>
+                    </div>
+                </div>
+                <button class="more">Показать еще</button>
             </div>
         </div>
     </div>
@@ -91,7 +391,7 @@
             <div class="footer_top">
                 <div class="footer_column">
                     <a href="">
-                        <img src="src/img/logo-dark.svg" alt="" class="footer_logo">
+                        <img src="src/img/logo.png" alt="" class="footer_logo">
                     </a>
                     <div class="footer_adress">
                         <p>+7 (495) 123-45-68</p>
@@ -157,7 +457,8 @@
                     <span class="copyright">© 2019, Единое Поле</span>
                 </div>
                 <div class="footer_column">
-                    <span>Сделано в <a href="#">«Единое Поле»</a></span>
+                    <span class="made-by">Сделано в </span>
+                    <a class="made-by_link" href="#">«Единое Поле»</a>
                 </div>
             </div>
         </div>

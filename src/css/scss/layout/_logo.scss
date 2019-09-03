@@ -1,4 +1,14 @@
 .logo {
     display: inline-block;
     overflow: hidden;
+    width: 120px;
+    height: 33px;
+    @include tablet {
+        width: 179px;
+        height: 34px;
+    }
+
+    &_icon {
+        width: 100%;
+    }
 }

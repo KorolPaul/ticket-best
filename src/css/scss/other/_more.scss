@@ -1,16 +1,15 @@
 .more {
-    color: $bright_color;
-    padding: 0 32px 0 0;
-    background: url(#{$img}/arrow.svg) no-repeat right center;
-    transition: .2s ease-in-out filter;
+    font-size: 15px;
+    font-weight: 500;
+    color: $dark_color;
+    background: #e8e8e8;
+    border-radius: 4px;
+    padding: 16px 45px;
     @include tablet {
-        font-size: 17px;
+        min-width: 290px;
     }
 
     &:hover {
-        filter: grayscale(.5) brightness(1.2);
-    }
-    &:active {
-        filter: grayscale(1) brightness(1.5);
+        color: $light_color;
     }
 }

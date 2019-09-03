@@ -1,58 +1,11 @@
 .content {
-    position: relative;
-    margin: 0 0 100px;
-    @include tablet {
-        margin-bottom: 125px;
-    }
 
-    &__overflow {
-        overflow: hidden;
-    }
-    &__bright {
-        background: $bright_color;
-        margin-bottom: 100px;
-        @include tablet {
-            margin-bottom: 120px;
-        }
-    }
-    &__gray {
-        background: $gray_color__bg;
-        padding-top: 38px;
-        padding-bottom: 38px;
-    }
-    &__dots {
-        &::after {
-            content: '';
-            background: url(#{$img}/yellow-dots.svg) no-repeat;
-            background-size: 100% 100%;
-            position: absolute;
-            right: 0;
-            bottom: -80px;
-            width: 269px;
-            height: 409.5px;
-            z-index: 1;
-            @include tablet {
-                width: 570px;
-                height: 821px;
-                bottom: -260px;
-            }
-        }
-    }
 
     &_holder {
         @include layout;
-        padding: 0 $layout_indent;
-
-    }
-
-    &_image {
-        display: none;
+        padding: 20px $layout_indent 0;
         @include tablet {
-            display: block;
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            margin: 0 0 -100px;
+            padding: 74px $layout_indent 0;
         }
     }
 }

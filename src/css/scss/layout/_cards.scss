@@ -1,0 +1,157 @@
+.cards {
+    margin: 0 0 30px;
+    @include tablet {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+}
+
+.card {
+    margin: 0 0 20px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    transition: .2s ease-in-out box-shadow;
+    @include tablet {
+        display: block;
+        height: 555px;
+        margin-bottom: 50px;
+        width: 31%;
+    }
+    @include desktop {
+        width: 23%;
+    }
+
+    &__small {
+        display: block;
+        height: auto;
+    }
+
+    &:hover {
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+    }
+
+    .cards__3 & {
+        @include tablet {
+            width: 31%;
+        }
+    }
+
+    &_image {
+        border-radius: 6px;
+        width: 25%;
+        margin: 0 10px 0 0;
+        @include tablet {
+            width: 100%;
+        }
+
+        .card__small & {
+            width: 100%;
+            margin: 0;
+        }
+    }
+    &_info {
+        background: $light_color;
+        position: relative;
+        flex-grow: 1;
+        border-radius: 6px;
+        @include tablet {
+            max-height: 100px;
+            overflow: hidden;
+            padding: 10px;
+            transition: .2s ease-in-out all;
+        }
+
+        .card:not(.card__small):hover & {
+            max-height: 180px;
+            margin-top: -80px;
+        }
+
+        .card__small & {
+            height: auto;
+            padding: 10px 0;
+        }
+    }
+    &_title {
+        cursor: pointer;
+        display: block;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 1.18;
+        color: $dark_color;
+        min-height: 40px;
+        margin: 0 0 15px;
+        transition: .2s ease-in-out color;
+        @include tablet {
+            margin: 0 0 5px;
+        }
+
+        .card__small & {
+            width: calc(100% - 112px);
+            min-height: 0;
+        }
+
+        &:hover {
+            color: #7d5dd4;
+        }
+    }
+    &_date,
+    &_adress {
+        opacity: 0.6;
+        font-size: 15px;
+        line-height: 1.33;
+        color: #444444;
+        margin: 0;
+    }
+    &_date {
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &_price {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 1.33;
+        color: $dark_color;
+    }
+    &_button {
+        font-size: 15px;
+        font-weight: 500;
+        padding: 6px 18px;
+        margin: 0;
+        @include tablet {
+            width: 100%;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 1.25;
+            padding: 16px;
+        }
+    }
+    &_price-button {
+        position: absolute;
+        right: 0;
+        top: 10px;
+        font-size: 15px;
+        font-weight: 500;
+        padding: 10px 16px;
+    }
+    &_tags {
+        display: none;
+        @include tablet {
+            position: absolute;
+            top: 12px;
+            left: 15px;
+            right: 15px;
+            display: block;
+        }
+    }
+    &_tag {
+        font-size: 15px;
+        line-height: 1.33;
+        margin: 0 10px 0 0;
+        color: $light_color;
+    }
+}

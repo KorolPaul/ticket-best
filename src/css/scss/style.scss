@@ -20,7 +20,6 @@
 /*layout*/
 @import  "layout/headings";
 @import  "layout/header";
-@import  "layout/sidebar";
 @import  "layout/footer";
 @import  "layout/footer-menu";
 @import  "layout/menu";
@@ -30,13 +29,19 @@
 @import  "layout/tab";
 @import  "layout/popup";
 @import  "layout/tabs";
-
+@import  "layout/cards";
+@import  "layout/filter";
 
 /*Other*/
 @import  "other/more";
 @import  "other/city-select";
 @import  "other/search";
 @import  "other/lang";
+@import  "other/slider";
+@import  "other/socials";
+@import  "other/payments";
+@import  "other/categories";
 
 /* Plugins */
 @import  "plugins/selectize";
+@import  "plugins/owl";

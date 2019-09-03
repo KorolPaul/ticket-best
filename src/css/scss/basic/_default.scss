@@ -2,6 +2,7 @@ body {
     background: $bg_color;
     color: $color;
     font: #{$font-size__small} $font-family;
+    line-height: 1.33;
     padding: 0;
     @include tablet {
         font-size: $font-size;
