@@ -66,6 +66,14 @@ table {
     width: 100%;
 }
 
+blockquote {
+    padding: 38px 0 0 0;
+    position: absolute;
+    background: url(#{$img}/quotes.svg) no-repeat 0 0;
+    font-size: 17px;
+    line-height: 1.41;
+}
+
 .menu-opened {
     overflow: hidden;
     @include tablet {

@@ -25,7 +25,7 @@
         color: #beaeea;
     }
     &:disabled {
-        background-color: $gray_color__light;
+        background-color: $gray_color;
     }
 }
 
@@ -36,20 +36,4 @@ input[type="button"] {
 
 .button {
     @include button;
-
-    &__light {
-        background: $light_color;
-        color: $bright_color;
-
-        &:hover {
-            color: $light_color;
-        }
-        &:active {
-            color: #beaeea;
-        }
-    }
-    &__bordered {
-        border: 1px solid $bright_color;
-        padding: 10px 23px;
-    }
 }

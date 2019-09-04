@@ -1,0 +1,30 @@
+.participants {
+    @include tablet {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.participant {
+    text-align: center;
+    @include tablet {
+        width: 23%;
+    }
+
+    &_avatar {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        margin: 0 0 18px;
+    }
+    &_name {
+        font-weight: bold;
+        line-height: 1.29;
+        margin: 0 0 5px;
+    }
+    &_position {
+        opacity: 0.6;
+        font-size: 15px;
+        line-height: 1.33;
+    }
+}
