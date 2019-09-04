@@ -25,27 +25,51 @@ a {
 }
 
 p {
-    margin: 0 0 20px;
+    margin: 0 0 15px;
 }
 
 ul,
 ol {
-    padding: 0 0 0 20px;
+    padding: 0;
+    margin: 0 0 40px;
+
+    li {
+        font-size: $font-size;
+        line-height: 20px;
+        margin: 0 0 16px;
+        padding: 0 0 0 35px;
+        position: relative;
+    }
 }
 
 ul li {
-    font-size: 16px;
-    line-height: 1.38;
-    margin: 0 0 16px;
-    @include tablet {
-        font-size: 21px;
-        line-height: 1.19;
-    }
+    list-style: none;
 
-    &::marker {
-        color: $yellow_color;
-        font-size: 24px;
-        vertical-align: -2px;
+    &::before {
+        content: '';
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        background: $bright_color;
+        position: absolute;
+        left: 0;
+        top: 5px;
+    }
+}
+
+ol {
+    list-style: none;
+    counter-reset: counter;
+
+    li {
+        counter-increment: counter;
+
+        &::before {
+            content: counter(counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
     }
 }
 
@@ -64,6 +88,17 @@ textarea {
 table {
     border-collapse: collapse;
     width: 100%;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    margin: 20px 0;
+    font-size: $font-size__small;
+    line-height: 1.38;
+    color: #a1a1a1;
 }
 
 .menu-opened {

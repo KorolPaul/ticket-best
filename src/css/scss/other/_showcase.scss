@@ -1,7 +1,8 @@
-.slider {
+.showcase {
+    position: relative;
 
-    &_item {
-        position: relative;
+    &_image {
+        width: 100%;
     }
     &_info {
         color: $light_color;
@@ -9,10 +10,14 @@
         left: 15px;
         right: 15px;
         bottom: 40px;
-        text-align: center;
         @include tablet {
-            left: 20vh;
-            right: 20vh;
+            left: 0;
+            right: 0;
+        }
+    }
+    &_info-content {
+        @include tablet {
+            @include layout;
         }
     }
     &_title {
