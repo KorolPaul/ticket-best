@@ -11,8 +11,11 @@
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.12);
     padding: 34px 30px 60px;
     @include tablet {
+        box-sizing: border-box;
         margin: 0 25px 0 0;
         padding-bottom: 80px;
+        width: 485px;
+        min-height: 368px;
     }
 
     &_text {
@@ -21,7 +24,7 @@
     &_author {
         overflow: hidden;
     }
-    &_author-avatqr {
+    &_author-image {
         border-radius: 50%;
         width: 60px;
         height: 60px;

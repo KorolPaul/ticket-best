@@ -6,11 +6,10 @@
         margin: 0 0 96px;
     }
     
-    &_item {
+    &_link {
+        position: relative;
+        display: block;
         @include tablet {
-            display: none;
-            position: relative;
-
             &:nth-child(1) {
                 display: block;
                 grid-row-start: 1;
@@ -36,6 +35,11 @@
     }
     &_image {
         width: 100%;
+        transition: .2s ease-in-out filter;
+        
+        &:hover {
+            filter: saturate(1.2);
+        }
     }
     &_more {
         background-color: rgba(0, 0, 0, 0.5);
@@ -51,5 +55,10 @@
         line-height: 1.33;
         text-align: center;
         color: $light_color;
+        transition: .2s ease-in-out background-color;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
     }
 }

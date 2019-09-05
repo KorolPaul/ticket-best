@@ -21,11 +21,17 @@
     line-height: 0;
     height: 0;
 }
-.owl-carousel .owl-stage-outer {
+.owl-stage-outer {
     position: relative;
     overflow: hidden;
     /* fix for flashing background */
     transform: translate3d(0px, 0px, 0px);
+
+    .reviews &,
+    .smi & {
+        padding: 10px;
+        margin: -10px;
+    }
 }
 .owl-carousel .owl-wrapper,
 .owl-carousel .owl-item {
@@ -40,7 +46,7 @@
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
 }
-.owl-carousel .owl-item img {
+.owl-carousel .owl-item img:not([class]) {
     display: block;
     width: 100%;
 }
@@ -57,7 +63,7 @@
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel .owl-nav button.owl-next,
 .owl-carousel button.owl-dot {
-    background: none;
+    background-color: transparent;
     color: inherit;
     border: none;
     padding: 0 !important;
@@ -198,4 +204,39 @@
             width: 100%;
         }
     }
+}
+
+.owl-nav {
+    position: absolute;
+    right: 0;
+    top: -71px;
+
+    span {
+        display: none;
+    }
+}
+
+.owl-prev,
+.owl-next {
+    height: 24px;
+    width: 24px;
+    margin: 0 0 0 12px;
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transition: .2s ease-in-out opacity;
+
+    &:hover {
+        opacity: .6;
+    }
+    &.disabled {
+        opacity: 0;
+    }
+}
+
+.owl-prev {
+    background-image: url(#{$img}/arrow-left.svg);
+}
+.owl-next {
+    background-image: url(#{$img}/arrow-right.svg);
 }
