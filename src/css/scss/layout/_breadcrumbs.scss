@@ -1,0 +1,15 @@
+.breadcrumbs {
+    font-size: $font-size__small;
+    line-height: 1.15;
+    letter-spacing: 0.5px;
+    color: $gray_color;
+    text-transform: uppercase;
+    margin: 0 0 40px;
+
+    &_link {
+        &::after {
+            content: '•';
+            margin: 0 2px 0 5px;
+        }
+    }
+}

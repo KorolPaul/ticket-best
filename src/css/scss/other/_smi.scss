@@ -1,0 +1,67 @@
+.smi {
+    background: $light_color;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.12);
+    padding: 60px 40px 35px;
+    position: relative;
+    margin: 0 0 72px;
+    @include tablet {
+        padding-bottom: 80px;
+        margin-bottom: 92px;
+    }
+
+    &_title {
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 1.07;
+        margin: 0 0 16px;
+        @include tablet {
+            font-size: 34px;
+            margin: 0 0 24px;
+        }
+    }
+    &_text {
+        font-size: 17px;
+        line-height: 1.41;
+        @include tablet {
+            font-size: 21px;
+            line-height: 1.41;
+        }
+    }
+    &_author {
+        margin: 0 0 16px;
+        @include tablet {
+            position: absolute;
+            left: 40px;
+            bottom: 36px;
+        }
+    }
+
+    &_author-name {
+        font-size: 17px;
+        font-weight: bold;
+        line-height: 1.29;
+        margin: 0;
+    }
+    &_author-position {
+        font-size: 15px;
+        line-height: 1.33;
+        opacity: 0.6;
+    }
+    &_link {
+        color: $bright_color;
+        font-size: 15px;
+        line-height: 1.33;
+        padding: 0 23px 0 0;
+        background: url(#{$img}/external.svg) no-repeat right center;
+        @include tablet {
+            position: absolute;
+            right: 65px;
+            bottom: 42px;
+        }
+
+        &:hover {
+            opacity: .6;
+        }
+    }
+}

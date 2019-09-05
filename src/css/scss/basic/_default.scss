@@ -99,6 +99,12 @@ figcaption {
     font-size: $font-size__small;
     line-height: 1.38;
     color: #a1a1a1;
+blockquote {
+    padding: 38px 0 0 0;
+    position: absolute;
+    background: url(#{$img}/quotes.svg) no-repeat 0 0;
+    font-size: 17px;
+    line-height: 1.41;
 }
 
 .menu-opened {
