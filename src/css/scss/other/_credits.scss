@@ -1,4 +1,6 @@
 .credits {
+    max-width: 700px;
+
     tr {
         display: block;
         @include tablet {
@@ -13,6 +15,8 @@
         @include tablet {
             display: table-cell;
             padding: 0 40px 18px 0;
+            min-width: 200px;
+            vertical-align: top;
         }
     }
     &_title {

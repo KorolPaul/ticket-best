@@ -8,18 +8,13 @@ input[type="tel"] {
     color: $color;
     border: none;
     box-sizing: border-box;
-    font: 500 16px $font-family;
+    font: 500 15px $font-family;
     padding: 14px 17px;
     width: 100%;
     margin: 0 0 10px;
-    opacity: 0.4;
     border-radius: 6px;
     background-color: #ffffff;
     transition: .2s ease-in opacity, .2s ease-in color;
-    @include tablet {
-        font-size: 17px;
-        padding: 17px 20px;
-    }
 
     &:focus {
         opacity: 1;

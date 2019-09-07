@@ -2,9 +2,16 @@
     margin: 0 0 30px;
     @include tablet {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: flex-start;
         flex-wrap: wrap;
+        margin-right: -2%;
+
+    }
+
+    &__3 {
+        justify-content: space-between;
+        margin-right: 0;
     }
 }
 
@@ -19,18 +26,32 @@
         height: 555px;
         margin-bottom: 50px;
         width: 31%;
+        margin-right: 2%;
     }
     @include desktop {
         width: 23%;
     }
 
+    &:hover {
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .15);
+    }
+
     &__small {
         display: block;
         height: auto;
-    }
+        @include tablet {
+            margin-right: 0;
+        }
 
-    &:hover {
-        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+        &:hover {
+            box-shadow: none;
+        }
+    }
+    &__empty {
+        animation: 1s pulsate ease-in-out infinite;
+        &:hover {
+            box-shadow: none;
+        }
     }
 
     .cards__3 & {
@@ -49,7 +70,7 @@
 
         .card__small & {
             width: 100%;
-            margin: 0;
+            margin: 0 0 10px;
         }
     }
     &_info {
@@ -64,7 +85,7 @@
             transition: .2s ease-in-out all;
         }
 
-        .card:not(.card__small):hover & {
+        .card:not(.card__small, .card__empty):hover & {
             max-height: 180px;
             margin-top: -80px;
         }
@@ -72,6 +93,9 @@
         .card__small & {
             height: auto;
             padding: 10px 0;
+        }
+        .card__empty & {
+            padding: 12px;
         }
     }
     &_title {
@@ -94,7 +118,7 @@
         }
 
         &:hover {
-            color: #7d5dd4;
+            color: $bright_color;
         }
     }
     &_date,
@@ -153,5 +177,50 @@
         line-height: 1.33;
         margin: 0 10px 0 0;
         color: $light_color;
+    }
+    &_image-placeholder {
+        background: #e8e8e8;
+        width: 100%;
+        height: 420px;
+        border-radius: 6px;
+    }
+    &_placeolder {
+        background: #e8e8e8;
+        height: 15px;
+        margin: 0 0 10px;
+
+        &:nth-child(1) {
+            width: 45%;
+        }
+        &:nth-child(2) {
+            width: 80%;
+        }
+        &:nth-child(3) {
+            width: 50%;
+        }
+        &:nth-child(4) {
+            width: 70%;
+        }
+        &:nth-child(5) {
+            width:  30%;
+        }
+        &:nth-child(6) {
+            width:20%;
+            position: absolute;
+            top: 12px;
+            right: 12px;
+        }
+    }
+}
+
+@keyframes pulsate {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: .7;
+    }
+    100% {
+        opacity: 1;
     }
 }

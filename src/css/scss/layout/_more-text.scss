@@ -1,4 +1,9 @@
 .more-text {
+    margin: 0 0 55px;
+    @include tablet {
+        margin-bottom: 75px;
+    }
+
     &_checkbox {
         visibility: hidden;
         position: absolute;

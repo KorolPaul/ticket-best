@@ -13,10 +13,15 @@
         @include tablet {
             left: 20vh;
             right: 20vh;
+            bottom: 66px;
         }
+    }
+    &_image {
+        width: 100%;
     }
     &_title {
         font: bold #{36px}/1.1 $font-family;
+        margin: 0 0 15px;
         @include tablet {
             font-size: bold #{54px}/1 $font-family;
         }

@@ -24,27 +24,37 @@
     </button>
     <header class="header">
         <div class="header_holder">
-            <a class="logo" href="#main">
-                <img src="/src/img/logo.png" alt="" class="logo_icon">
-            </a>
-            <div class="search">
-                <input type="search" class="search_field" placeholder="Поиск">
+            <div class="header_left">
+                <a class="logo" href="#main">
+                    <img src="/src/img/logo.png" alt="" class="logo_icon">
+                </a>
+                <div class="header_navigation">
+                    <select id="select-search" class="search" placeholder="Поиск"></select>
+                    <nav class="menu">
+                        <div class="menu_langs">
+                            <a href="#" class="menu_lang active">RU</a>
+                            <a href="#" class="menu_lang">EN</a>
+                            <a href="#" class="menu_lang">UA</a>
+                            <a href="#" class="menu_lang">EE</a>
+                        </div>
+                        <a href="#" class="menu_link">Концерты</a>
+                        <a href="#" class="menu_link">Спектакли</a>
+                        <a href="#" class="menu_link">Последний шанс</a>
+                        <a href="#" class="menu_link">О проекте</a>
+                        <a href="#" class="menu_link menu_link__other">...</a>
+                    </nav>
+                </div>
             </div>
-            <nav class="menu">
-                <a href="#" class="menu_link">Концерты</a>
-                <a href="#" class="menu_link">Спектакли</a>
-                <a href="#" class="menu_link">Последний шанс</a>
-                <a href="#" class="menu_link">О проекте</a>
-                <a href="#" class="menu_link menu_link__other">...</a>
-            </nav>
-            <div class="header_controls">
-                <button class="city-select">Выбор города</button>
-                <select name="" id="" class="lang">
-                    <option>RU</option>
-                    <option>EN</option>
-                    <option>UA</option>
-                    <option>EE</option>
-                </select>
+            <div class="header_right">
+                <div class="header_controls">
+                    <button class="city-select">Выбор города</button>
+                    <select class="lang">
+                        <option>RU</option>
+                        <option>EN</option>
+                        <option>UA</option>
+                        <option>EE</option>
+                    </select>
+                </div>
             </div>
         </div>
     </header>
@@ -98,8 +108,8 @@
                         </div>
                     </div>
                 </aside>
-                <div class="event">
-                    <h2>О мероприятии</h2>
+                <article>
+                    <h2 class="heading-1">О мероприятии</h2>
                     <p>Фантастический балет «Лебединое озеро» на сцене kultuurimaja Rugodiv в исполнении «Санкт-Петербургского Фестиваль Балета» в удивительно красочных декорациях. </p>
                     <p>Одной из жемчужин репертуара этого коллектива заслуженно считается балет Чайковского «Лебединое озеро» — эта фантастическая волшебная сказка о любви неизменно привлекает внимание тысяч зрителей. </p>
                     <p>Лебединое озеро — один из самых известных классических балетов. Это бриллиант в репертуаре Чайковского, постановка Петипа-Иванова была признана вершиной русского балетного искусства. </p>
@@ -120,31 +130,31 @@
                         </div>
                     </div>
     
-                    <h2>Звезды</h2>
-                    <div class="participants">
+                    <h2 class="heading-1">Звезды</h2>
+                    <div class="participants owl-carousel">
                         <div class="participant">
-                            <img src="src/img/peoples/people-1.png" alt="" class="participant_image">
+                            <img src="src/img/peoples/people-4.png" alt="" class="participant_image">
                             <p class="participant_name">Артем Ковалев</p>
                             <p class="participant_position">Вокалист</p>
                         </div>
                         <div class="participant">
-                            <img src="src/img/peoples/people-2.png" alt="" class="participant_image">
+                            <img src="src/img/peoples/people-3.png" alt="" class="participant_image">
                             <p class="participant_name">Владимир Уваров</p>
                             <p class="participant_position">Басист</p>
                         </div>
                         <div class="participant">
-                            <img src="src/img/peoples/people-3.png" alt="" class="participant_image">
+                            <img src="src/img/peoples/people-2.png" alt="" class="participant_image">
                             <p class="participant_name">Алла Некрасова</p>
                             <p class="participant_position">Барабаны</p>
                         </div>
                         <div class="participant">
-                            <img src="src/img/peoples/people-4.png" alt="" class="participant_image">
+                            <img src="src/img/peoples/people-1.png" alt="" class="participant_image">
                             <p class="participant_name">Валентина Красильникова</p>
                             <p class="participant_position">Главная гитара</p>
                         </div>
                     </div>
     
-                    <h2>Галерея</h2>
+                    <h2 class="heading-1">Галерея</h2>
                     <div class="gallery-grid">
                         <a href="#" class="gallery-grid_link">
                             <img src="src/img/gallery-1.jpg" alt="" class="gallery-grid_image">
@@ -158,7 +168,7 @@
                         </a>
                     </div>
     
-                    <h2>Отзывы</h2>
+                    <h2 class="heading-1">Отзывы</h2>
                     <div class="reviews owl-carousel">
                         <div class="review">
                             <blockquote class="review_text">Замечательная трагикомедия! Игра актеров завораживает, весь спектакль буквально проживаешь вместе с ними. Низкий поклон Леониду Каневскому и Кларе Новиковой за их талант и мастерство исполнения ролей. Браво!!!</blockquote>
@@ -239,8 +249,7 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
-
+                </article>
             </div>
         </div>
     </div>

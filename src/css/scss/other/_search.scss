@@ -1,24 +1,37 @@
 .search {
-    width: 100px;
+    display: contents;
 
-    &_field[type] {
-        width: 100%;
+    .selectize-input {
+        width: 100px;
         margin: 0;
         background: $light_color url('#{$img}/loop.svg') no-repeat 12px center;
         background-size: 17px 17px;
         font-size: 15px;
         font-weight: 500;
-        padding: 11px 15px 11px 43px;
+        padding: 11px 15px 11px 40px;
         opacity: 0.7;
         border-radius: 4px;
-        transition: .3s ease-in-out all;
-
-        &:hover,
-        &:focus {
-            opacity: 1;
+        @include desktop {
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: .3s ease-in-out all;
         }
-        &:focus {
-            width: 690px;
+
+        &.input-active {
+            opacity: 1;
+            
+            position: absolute;
+            left: 15px;
+            top: 10px;
+            right: 15px;
+            width: auto !important;
+            @include desktop {
+                left: 0;
+                top: 0;
+                right: auto;
+                width: 100% !important;
+            }
         }
     }
 

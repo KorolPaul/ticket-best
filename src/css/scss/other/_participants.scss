@@ -7,8 +7,9 @@
 
 .participant {
     text-align: center;
-    @include tablet {
-        width: 23%;
+    margin: 0 0 75px;
+    @include desktop {
+        margin: 40px 0 75px;
     }
 
     &_image {

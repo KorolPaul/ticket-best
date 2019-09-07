@@ -16,6 +16,7 @@ a {
 
     &:hover,
     &.hover {
+        color: $bright_color;
         outline: none;
     }
     &:active,
@@ -121,6 +122,6 @@ blockquote {
     color: #444444;
 }
 
-.event {
+article {
     min-width: 0; //flex fix
 }

@@ -24,27 +24,37 @@
     </button>
     <header class="header">
         <div class="header_holder">
-            <a class="logo" href="#main">
-                <img src="/src/img/logo.png" alt="" class="logo_icon">
-            </a>
-            <div class="search">
-                <input type="search" class="search_field" placeholder="Поиск">
+            <div class="header_left">
+                <a class="logo" href="#main">
+                    <img src="/src/img/logo.png" alt="" class="logo_icon">
+                </a>
+                <div class="header_navigation">
+                    <select id="select-search" class="search" placeholder="Поиск"></select>
+                    <nav class="menu">
+                        <div class="menu_langs">
+                            <a href="#" class="menu_lang active">RU</a>
+                            <a href="#" class="menu_lang">EN</a>
+                            <a href="#" class="menu_lang">UA</a>
+                            <a href="#" class="menu_lang">EE</a>
+                        </div>
+                        <a href="#" class="menu_link">Концерты</a>
+                        <a href="#" class="menu_link">Спектакли</a>
+                        <a href="#" class="menu_link">Последний шанс</a>
+                        <a href="#" class="menu_link">О проекте</a>
+                        <a href="#" class="menu_link menu_link__other">...</a>
+                    </nav>
+                </div>
             </div>
-            <nav class="menu">
-                <a href="#" class="menu_link">Концерты</a>
-                <a href="#" class="menu_link">Спектакли</a>
-                <a href="#" class="menu_link">Последний шанс</a>
-                <a href="#" class="menu_link">О проекте</a>
-                <a href="#" class="menu_link menu_link__other">...</a>
-            </nav>
-            <div class="header_controls">
-                <button class="city-select">Выбор города</button>
-                <select name="" id="" class="lang">
-                    <option>RU</option>
-                    <option>EN</option>
-                    <option>UA</option>
-                    <option>EE</option>
-                </select>
+            <div class="header_right">
+                <div class="header_controls">
+                    <button class="city-select">Выбор города</button>
+                    <select class="lang">
+                        <option>RU</option>
+                        <option>EN</option>
+                        <option>UA</option>
+                        <option>EE</option>
+                    </select>
+                </div>
             </div>
         </div>
     </header>
@@ -108,7 +118,7 @@
                 </div>
             </div>
 
-            <h2>Топ 3</h2>
+            <h2 class="heading-1">Топ 3</h2>
             <div class="cards cards__3">
                 <div class="card card__small">
                     <img src="https://via.placeholder.com/383x255" alt="" class="card_image">
@@ -147,7 +157,7 @@
                         <button class="filter_button">На выходные</button>
                     </div>
                     <div class="filter_select">
-                        <select name="" id="" placeholder="">
+                        <select>
                             <option>Дата</option>
                             <option>01.09.2019</option>
                             <option>02.09.2019</option>
@@ -156,7 +166,7 @@
                         </select>
                     </div>
                     <div class="filter_select">
-                        <select name="" id="" placeholder="Жанр">
+                        <select placeholder="Жанр">
                             <option>Жанр</option>
                             <option>01.09.2019</option>
                             <option>02.09.2019</option>
@@ -379,6 +389,50 @@
                         <p class="card_adress">Москва, Планета КВН</p>
                         <p class="card_price">от 500 ₽</p>
                         <button class="card_button">Купить билет</button>
+                    </div>
+                </div>
+                <div class="card card__empty">
+                    <div class="card_image-placeholder"></div>
+                    <div class="card_info">
+                        <div class="card_placeolder"></div>
+                        <div class="card_placeolder"></div>
+                        <div class="card_placeolder"></div>
+                        <div class="card_placeolder"></div>
+                        <div class="card_placeolder"></div>
+                        <div class="card_placeolder"></div>
+                    </div>
+                </div>
+                <div class="card card__empty">
+                    <div class="card_image-placeholder"></div>
+                    <div class="card_info">
+                        <div class="card_placeolder"></div>
+                        <div class="card_placeolder"></div>
+                        <div class="card_placeolder"></div>
+                        <div class="card_placeolder"></div>
+                        <div class="card_placeolder"></div>
+                        <div class="card_placeolder"></div>
+                    </div>
+                </div>
+                <div class="card card__empty">
+                    <div class="card_image-placeholder"></div>
+                    <div class="card_info">
+                        <div class="card_placeolder"></div>
+                        <div class="card_placeolder"></div>
+                        <div class="card_placeolder"></div>
+                        <div class="card_placeolder"></div>
+                        <div class="card_placeolder"></div>
+                        <div class="card_placeolder"></div>
+                    </div>
+                </div>
+                <div class="card card__empty">
+                    <div class="card_image-placeholder"></div>
+                    <div class="card_info">
+                        <div class="card_placeolder"></div>
+                        <div class="card_placeolder"></div>
+                        <div class="card_placeolder"></div>
+                        <div class="card_placeolder"></div>
+                        <div class="card_placeolder"></div>
+                        <div class="card_placeolder"></div>
                     </div>
                 </div>
                 <button class="more">Показать еще</button>

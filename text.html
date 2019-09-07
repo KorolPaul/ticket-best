@@ -24,27 +24,37 @@
     </button>
     <header class="header">
         <div class="header_holder">
-            <a class="logo" href="#main">
-                <img src="/src/img/logo.png" alt="" class="logo_icon">
-            </a>
-            <div class="search">
-                <input type="search" class="search_field" placeholder="Поиск">
+            <div class="header_left">
+                <a class="logo" href="#main">
+                    <img src="/src/img/logo.png" alt="" class="logo_icon">
+                </a>
+                <div class="header_navigation">
+                    <select id="select-search" class="search" placeholder="Поиск"></select>
+                    <nav class="menu">
+                        <div class="menu_langs">
+                            <a href="#" class="menu_lang active">RU</a>
+                            <a href="#" class="menu_lang">EN</a>
+                            <a href="#" class="menu_lang">UA</a>
+                            <a href="#" class="menu_lang">EE</a>
+                        </div>
+                        <a href="#" class="menu_link">Концерты</a>
+                        <a href="#" class="menu_link">Спектакли</a>
+                        <a href="#" class="menu_link">Последний шанс</a>
+                        <a href="#" class="menu_link">О проекте</a>
+                        <a href="#" class="menu_link menu_link__other">...</a>
+                    </nav>
+                </div>
             </div>
-            <nav class="menu">
-                <a href="#" class="menu_link">Концерты</a>
-                <a href="#" class="menu_link">Спектакли</a>
-                <a href="#" class="menu_link">Последний шанс</a>
-                <a href="#" class="menu_link">О проекте</a>
-                <a href="#" class="menu_link menu_link__other">...</a>
-            </nav>
-            <div class="header_controls">
-                <button class="city-select">Выбор города</button>
-                <select name="" id="" class="lang">
-                    <option>RU</option>
-                    <option>EN</option>
-                    <option>UA</option>
-                    <option>EE</option>
-                </select>
+            <div class="header_right">
+                <div class="header_controls">
+                    <button class="city-select">Выбор города</button>
+                    <select class="lang">
+                        <option>RU</option>
+                        <option>EN</option>
+                        <option>UA</option>
+                        <option>EE</option>
+                    </select>
+                </div>
             </div>
         </div>
     </header>

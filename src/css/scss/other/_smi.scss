@@ -3,6 +3,7 @@
     margin: 0 0 72px;
     @include tablet {
         margin-bottom: 92px;
+        max-width: 792px;
     }
 
     &_item {

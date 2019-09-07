@@ -1,7 +1,8 @@
 .tickets {
-    @include tablet {
-        margin: -150px 0 0;
+    @include desktop {
+        margin: -125px 0 0;
         position: relative;
+        z-index: 4;
     }
 }
 

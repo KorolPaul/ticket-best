@@ -7,13 +7,16 @@
 }
 
 .category {
+    box-sizing: border-box;
     color: $light_color;
-    padding: 0 0 24.7%;
+    padding: 0 0 11.6%;
     position: relative;
     margin: 0 0 10px;
+    min-height: 85px;
     @include tablet {
-        margin: 0 0 20px;
-        width: 48.5%;
+        margin: 28px 0 20px;
+        width: 49%;
+        min-height: 145px;
     }
 
     &_image {

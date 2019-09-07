@@ -19,10 +19,10 @@
         line-height: 1.43;
     }
     &:hover {
-        background-color: $bright_color__dark;
+        background-color: $bright_color__light;
     }
     &:active {
-        color: #beaeea;
+        background-color: $bright_color__dark;
     }
     &:disabled {
         background-color: $gray_color;
