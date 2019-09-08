@@ -197,7 +197,8 @@
         border-radius: 5px;
         transition: .2s ease-in-out width;
 
-        .slider & {
+        .slider &,
+        .gallery-grid & {
             background-color: $light_color;
         }
     }
@@ -219,8 +220,7 @@
     }
 
     .smi & {
-        top: 50px;
-        right: -10px;
+        position: static;
     }
 }
 
@@ -249,6 +249,8 @@
         height: 60px;
         width: 60px;
         border-radius: 50%;
+        position: absolute;
+        top: 50px;
 
         &:hover {
             opacity: 1;
@@ -264,7 +266,7 @@
     background-image: url(#{$img}/arrow-left.svg);
 
     .smi & {
-        background-image: url(#{$img}/arrow-left-small.svg);
+        display: none;
     }
 }
 .owl-next {
@@ -272,5 +274,6 @@
 
     .smi & {
         background-image: url(#{$img}/arrow-right-small.svg);
+        right: -10px;
     }
 }

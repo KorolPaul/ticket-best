@@ -1,9 +1,9 @@
 .gallery-grid {
+    margin: 0 0 96px;
     @include tablet {
         display: grid;
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr 1fr;
-        margin: 0 0 96px;
     }
     
     &_link {
@@ -42,20 +42,23 @@
         }
     }
     &_more {
-        background-color: rgba(0, 0, 0, 0.5);
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 15px;
-        line-height: 1.33;
-        text-align: center;
-        color: $light_color;
-        transition: .2s ease-in-out background-color;
+        display: none;
+        @include tablet {
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+            line-height: 1.33;
+            text-align: center;
+            color: $light_color;
+            transition: .2s ease-in-out background-color;
+        }
 
         &:hover {
             background-color: rgba(0, 0, 0, 0.2);

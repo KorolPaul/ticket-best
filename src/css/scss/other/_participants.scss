@@ -1,7 +1,9 @@
 .participants {
+    margin: 0 0 86px;
     @include tablet {
         display: flex;
         justify-content: space-between;
+        margin: 0;
     }
 }
 
