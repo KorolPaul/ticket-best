@@ -130,10 +130,6 @@
                     <p>Одной из жемчужин репертуара этого коллектива заслуженно считается балет Чайковского «Лебединое озеро» — эта фантастическая волшебная сказка о любви неизменно привлекает внимание тысяч зрителей. </p>
                     <p>Лебединое озеро — один из самых известных классических балетов. Это бриллиант в репертуаре Чайковского, постановка Петипа-Иванова была признана вершиной русского балетного искусства. </p>
                     <div class="more-text">
-                        <input class="more-text_checkbox" type="checkbox" id="more-text">
-                        <label class="more-text_button" for="more-text">
-                            Читать далее
-                        </label>
                         <div class="more-text_content">
                             <p>История любви принца Зигфрида и прекрасной принцессы Одетты, превращённой в лебедя проклятием злого колдуна — рыцаря Ротбарта никого не оставит равнодушным. </p>
                             <p>В либретто «Лебединого озера» просматриваются мотивы близкие русской литературе. Популярные образы той эпохи: стремление к красоте и идеалу и невозможность его обрести, надежда на счастье — предательство и искупление вины ценой своей жизни. </p>
@@ -144,6 +140,10 @@
                             <p>Санкт-Петербургский Фестиваль Балет, ведет активную гастрольную деятельность и география выступлений коллектива огромна. </p>
                             <p>Гастроли коллектива с успехом прошли в Германии, Австрии, Чехии, Исландии, Китае, Словакии, Хорватии, Финляндии и Швеции. </p>
                         </div>
+                        <span class="more-text_button" for="more-text">
+                            <span class="more-text_title">Читать далее</span>
+                            <span class="more-text_active-title">Скрыть</span>
+                        </span>
                     </div>
     
                     <h2 class="heading-1">Звезды</h2>
@@ -172,13 +172,13 @@
     
                     <h2 class="heading-1">Галерея</h2>
                     <div class="gallery-grid owl-carousel">
-                        <a href="#" class="gallery-grid_link">
+                        <a data-fancybox="gallery" href="src/img/gallery-1.jpg" class="gallery-grid_link">
                             <img src="src/img/gallery-1.jpg" alt="" class="gallery-grid_image">
                         </a>
-                        <a href="#" class="gallery-grid_link">
+                        <a data-fancybox="gallery" href="src/img/gallery-2.jpg" class="gallery-grid_link">
                             <img src="src/img/gallery-2.jpg" alt="" class="gallery-grid_image">
                         </a>
-                        <a href="#" class="gallery-grid_link">
+                        <a data-fancybox="gallery" href="src/img/gallery-3.jpg" class="gallery-grid_link">
                             <img src="src/img/gallery-3.jpg" alt="" class="gallery-grid_image">
                             <span class="gallery-grid_more">Еще 4 фото</span>
                         </a>
@@ -357,7 +357,12 @@
     <script src="./src/js/jquery-3.4.1.min.js"></script>
     <script src="./src/js/owl.carousel.min.js"></script>
     <script src="./src/js/selectize.min.js"></script>
+    <script src="./src/js/jquery.fancybox.min.js"></script>
     <script src="./src/js/main.js"></script>
+
+    <script>
+    
+    </script>
 
 </body>
 </html>

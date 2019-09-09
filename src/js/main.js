@@ -62,13 +62,23 @@ $(document).ready(function () {
         }
     });
 
+    /* accordion */
+    $('.more-text_button').on('click', function() {
+        $(this).toggleClass('opened');
+        $(this).prev('.more-text_content').slideToggle();
+    });
+
     /* Slider */
     $('.slider').owlCarousel({
         loop: true,
         margin: 0,
         nav: false,
         dots: true,
-        items: 1
+        items: 1,
+        autoplay: true,
+        autoplayTimeout: 10000,
+        autoplayHoverPause: true,
+        smartSpeed: 700
     });
 
     $('.participants').owlCarousel({

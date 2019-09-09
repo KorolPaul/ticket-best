@@ -1,5 +1,8 @@
 .tickets {
     @include desktop {
+        overflow: auto;
+        position: sticky;
+        top: 10px;
         margin: -125px 0 0;
         position: relative;
         z-index: 4;

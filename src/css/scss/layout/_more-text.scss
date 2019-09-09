@@ -28,14 +28,25 @@
             right: -22px;
         }
     }
-    &_checkbox:checked + &_button::after {
+    &_button.opened::after {
         transform: rotate(180deg);
     }
     &_content {
         display: none;
-    }
-    &_checkbox:checked + label + &_content {
-        display: block;
         padding: 20px 0 0;
+    }
+    &_title {
+        display: block;
+
+        .opened & {
+            display: none;
+        }
+    }
+    &_active-title {
+        display: none;
+
+        .opened & {
+            display: block;
+        }
     }
 }

@@ -48,7 +48,8 @@
                 font-size: 18px;
                 font-weight: 500;
                 display: block;
-                margin-top: -8px;
+                margin-left: 0;
+                padding: 0 0 10px 15px;
             }
         }
     }
@@ -69,6 +70,50 @@
         &:hover,
         &.active {
             color: $bright_color__light;
+        }
+    }
+}
+
+.submenu-wrapper {
+    position: relative;
+    cursor: pointer;
+    z-index: 2;
+}
+.submenu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    min-width: 120px;
+    padding: 10px 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s ease-in-out opacity, .0001s visibility .2s;
+
+    .submenu-wrapper:hover & {
+        opacity: 1;
+        visibility: visible;
+        transition: .2s ease-in-out opacity .0001s, .0001s visibility;
+    }
+
+    &_list {
+        border-radius: 4px;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+        background: $light_color;
+        padding: 10px 0;
+    }
+
+    &_link {
+        display: block;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1.33;
+        color: $dark_color;
+        padding: 7px 15px 6px;
+        transition: .2s ease-in-out background;
+
+        &:hover {
+            background: #ffb8e4;
+            color: $dark_color;
         }
     }
 }
