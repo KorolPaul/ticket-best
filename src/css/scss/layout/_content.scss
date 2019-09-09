@@ -4,6 +4,7 @@
         @include layout;
         padding: 20px $layout_indent 40px;
         @include tablet {
+            overflow: hidden;
             padding: 46px $layout_indent 80px;
         }
     }

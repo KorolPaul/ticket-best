@@ -2,10 +2,8 @@
     display: inline-block;
     overflow: hidden;
     width: 120px;
-    height: 33px;
     @include tablet {
         width: 179px;
-        height: 34px;
         flex-shrink: 0;
     }
 

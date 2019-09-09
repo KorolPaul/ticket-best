@@ -4,7 +4,10 @@
     letter-spacing: 0.5px;
     color: $gray_color;
     text-transform: uppercase;
-    margin: 0 0 40px;
+    margin: 0 0 30px;
+    @include tablet {
+        margin-top: -15px;
+    }
 
     &_link {
         &::after {

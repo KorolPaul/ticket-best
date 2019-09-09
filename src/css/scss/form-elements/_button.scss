@@ -25,7 +25,8 @@
         background-color: $bright_color__dark;
     }
     &:disabled {
-        background-color: $gray_color;
+        background-color: #d0d0d0;
+        cursor: default;
     }
 }
 

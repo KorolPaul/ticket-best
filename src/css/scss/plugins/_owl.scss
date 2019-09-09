@@ -6,12 +6,16 @@
     position: relative;
     z-index: 1;
 }
-.owl-carousel .owl-stage {
+.owl-stage {
     position: relative;
     -ms-touch-action: pan-Y;
     touch-action: manipulation;
     backface-visibility: hidden;
     /* fix firefox animation glitch */
+
+    .smi & {
+        padding: 0 0 20px;
+    }
 }
 .owl-carousel .owl-stage:after {
     content: ".";

@@ -5,8 +5,10 @@
         justify-content: flex-start;
         align-items: flex-start;
         flex-wrap: wrap;
+        margin-right: -3%;
+    }
+    @include desktop {
         margin-right: -2%;
-
     }
 
     &__3 {
