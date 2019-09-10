@@ -10,9 +10,10 @@
     }
 
     &_link {
+        color: $gray_color;
         &::after {
             content: '•';
-            margin: 0 2px 0 5px;
+            margin: 0 2px 0 8px;
         }
     }
 }

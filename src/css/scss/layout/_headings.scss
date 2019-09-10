@@ -1,6 +1,9 @@
 %heading-1 {
-    font: bold 34px $font-family;
+    font: 500 28px $font-family;
     margin: 0 0 28px;
+    @include tablet {
+        font: bold 34px $font-family;
+    }
 }
 %heading-2 {
     color: $dark_color;

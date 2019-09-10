@@ -126,3 +126,9 @@ blockquote {
 article {
     min-width: 0; //flex fix
 }
+
+.mobile-only {
+    @include desktop {
+        display: none;
+    }
+}

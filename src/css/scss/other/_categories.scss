@@ -1,8 +1,10 @@
 .categories {
+    margin: 0 0 40px;
     @include tablet {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        margin: 28px 0 40px;
     }
 }
 
@@ -14,7 +16,7 @@
     margin: 0 0 10px;
     min-height: 85px;
     @include tablet {
-        margin: 28px 0 20px;
+        margin: 0 0 20px;
         width: 49%;
         min-height: 145px;
     }
