@@ -84,6 +84,7 @@
     display: -moz-inline-stack;
     display: inline-block;
     zoom: 1;
+    white-space: nowrap;
 }
 .selectize-control.multi .selectize-input > div {
     cursor: pointer;
@@ -199,7 +200,9 @@
     max-height: 200px;
     -webkit-overflow-scrolling: touch;
 
-    .search & > div {
+    .search & > div,
+    .search & > a {
+        display: block;
         padding: 7px 40px 6px;
     }
 }

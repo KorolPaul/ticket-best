@@ -1,7 +1,7 @@
 .header {
     background: $dark_color;
     position: relative;
-    z-index: 2;
+    z-index: 4;
     
     &_holder {
         @include layout;

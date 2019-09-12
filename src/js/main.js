@@ -36,9 +36,12 @@ $(document).ready(function () {
         searchField: 'name',
         options: [],
         create: false,
+        onChange: function(e) {
+            window.location = e;
+        },
         render: {
             option: function(item, escape) {
-                return '<div>' + escape(item.name) +'</div>';
+                return '<a onclick="alert(1)" href="' + item.url + '">' + escape(item.name) +'</a>';
             }
         },
         score: function(search) {
@@ -142,4 +145,6 @@ $(document).ready(function () {
         });
     }
 
+    /* Datapicker */
+    $('.date-input').datepicker();
 });
