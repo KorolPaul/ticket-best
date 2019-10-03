@@ -4112,6 +4112,13 @@ h3,
 .filter_column {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+@media all and (min-width: 769px) {
+  .filter_column {
+    justify-content: flex-start;
+  }
 }
 
 .filter_buttons {
@@ -4159,6 +4166,10 @@ h3,
   .filter_select {
     margin: 0 0 0 10px;
   }
+}
+
+.filter_select + .filter_select {
+  margin-right: 0;
 }
 
 .filter_all {

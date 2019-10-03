@@ -15,6 +15,10 @@
     &_column {
         display: flex;
         align-items: center;
+        justify-content: space-between;
+        @include tablet {
+            justify-content: flex-start;
+        }
     }
     &_buttons {
         display: none;
@@ -54,6 +58,9 @@
         @include desktop {
             margin: 0 0 0 10px;
         }
+    }
+    &_select + &_select {
+        margin-right: 0;
     }
     &_all {
         margin: 0 0 0 10px;
